@@ -1,0 +1,11 @@
+#import "filters/FilterBase.h"
+
+#import "filters/ColorInvertFilter.h"
+#import "filters/HalftoneFilter.h"
+#import "filters/SoftEleganceFilter.h"
+#import "filters/MissEtikateFilter.h"
+#import "filters/SepiaFilter.h"
+#import "filters/pixel/AtkinsonFilter.h"
+#import "filters/VignetteFilter.h"
+#import "filters/GrayscaleFilter.h"
+#import "filters/PolkaDotFilter.h"
