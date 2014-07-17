@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF7E985A1977522800D3A1A1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7E98591977522800D3A1A1 /* CoreFoundation.framework */; };
+		CF7E98601977522800D3A1A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF7E985E1977522800D3A1A1 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF7E98561977522800D3A1A1 /* plotdevice-tensor.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "plotdevice-tensor.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7E98591977522800D3A1A1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CF7E985D1977522800D3A1A1 /* plotdevice-tensor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "plotdevice-tensor-Info.plist"; path = "bundle/plotdevice-tensor-Info.plist"; sourceTree = "<group>"; };
+		CF7E985F1977522800D3A1A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF7E98611977522800D3A1A1 /* plotdevice-tensor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "plotdevice-tensor-Prefix.pch"; path = "bundle/plotdevice-tensor-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF7E98531977522800D3A1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7E985A1977522800D3A1A1 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF7E984D1977522800D3A1A1 = {
+			isa = PBXGroup;
+			children = (
+				CF7E985B1977522800D3A1A1 /* plotdevice-tensor */,
+				CF7E98581977522800D3A1A1 /* Frameworks */,
+				CF7E98571977522800D3A1A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF7E98571977522800D3A1A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF7E98561977522800D3A1A1 /* plotdevice-tensor.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF7E98581977522800D3A1A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7E98591977522800D3A1A1 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF7E985B1977522800D3A1A1 /* plotdevice-tensor */ = {
+			isa = PBXGroup;
+			children = (
+				CF7E985C1977522800D3A1A1 /* Supporting Files */,
+			);
+			path = "plotdevice-tensor";
+			sourceTree = "<group>";
+		};
+		CF7E985C1977522800D3A1A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF7E985D1977522800D3A1A1 /* plotdevice-tensor-Info.plist */,
+				CF7E985E1977522800D3A1A1 /* InfoPlist.strings */,
+				CF7E98611977522800D3A1A1 /* plotdevice-tensor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF7E98551977522800D3A1A1 /* plotdevice-tensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7E98641977522800D3A1A1 /* Build configuration list for PBXNativeTarget "plotdevice-tensor" */;
+			buildPhases = (
+				CF7E98521977522800D3A1A1 /* Sources */,
+				CF7E98531977522800D3A1A1 /* Frameworks */,
+				CF7E98541977522800D3A1A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "plotdevice-tensor";
+			productName = "plotdevice-tensor";
+			productReference = CF7E98561977522800D3A1A1 /* plotdevice-tensor.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF7E984E1977522800D3A1A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Objects In Space And Time";
+			};
+			buildConfigurationList = CF7E98511977522800D3A1A1 /* Build configuration list for PBXProject "plotdevice-tensor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF7E984D1977522800D3A1A1;
+			productRefGroup = CF7E98571977522800D3A1A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF7E98551977522800D3A1A1 /* plotdevice-tensor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF7E98541977522800D3A1A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7E98601977522800D3A1A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF7E98521977522800D3A1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF7E985E1977522800D3A1A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF7E985F1977522800D3A1A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = bundle;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF7E98621977522800D3A1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF7E98631977522800D3A1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF7E98651977522800D3A1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plotdevice-tensor/plotdevice-tensor-Prefix.pch";
+				INFOPLIST_FILE = "plotdevice-tensor/plotdevice-tensor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CF7E98661977522800D3A1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plotdevice-tensor/plotdevice-tensor-Prefix.pch";
+				INFOPLIST_FILE = "plotdevice-tensor/plotdevice-tensor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF7E98511977522800D3A1A1 /* Build configuration list for PBXProject "plotdevice-tensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7E98621977522800D3A1A1 /* Debug */,
+				CF7E98631977522800D3A1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7E98641977522800D3A1A1 /* Build configuration list for PBXNativeTarget "plotdevice-tensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7E98651977522800D3A1A1 /* Debug */,
+				CF7E98661977522800D3A1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF7E984E1977522800D3A1A1 /* Project object */;
+}
