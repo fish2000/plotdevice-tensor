@@ -3,3 +3,4 @@
 *.so
 build/
 dist/
+plotdevice_tensorlib.egg-info/

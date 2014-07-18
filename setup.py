@@ -8,6 +8,8 @@ from distutils.dir_util import remove_tree
 from setuptools import setup
 from setuptools.extension import Extension
 
+VERSION = "0.1.1"
+
 CLASSIFIERS = (
     "Development Status :: 3 - Alpha",
     "Environment :: MacOS X :: Cocoa",
@@ -96,7 +98,7 @@ if __name__ == '__main__':
         puts(colored.cyan(pformat(sorted(filters.keys()), indent=4)))
 
 setup(name="plotdevice-tensorlib",
-    version="0.1.0",
+    version=VERSION,
     author="Alexander Bohn",
     author_email="fish2000@gmail.com",
     url="http://github.com/fish2000/plotdevice-tensorlib",
