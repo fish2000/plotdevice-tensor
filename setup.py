@@ -8,6 +8,23 @@ from distutils.dir_util import remove_tree
 from setuptools import setup
 from setuptools.extension import Extension
 
+CLASSIFIERS = (
+    "Development Status :: 3 - Alpha",
+    "Environment :: MacOS X :: Cocoa",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python",
+    "Topic :: Artistic Software",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Graphics :: Editors :: Vector-Based",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Text Editors :: Integrated Development Environments (IDE)")
+
 frameworks = join(getcwd(), 'Frameworks')
 gpuimage_libs = join(frameworks,  'GPUImage.framework', 'Versions', 'A')
 gpuimage_headers = join(gpuimage_libs, 'Headers')
@@ -78,12 +95,15 @@ if __name__ == '__main__':
         puts(colored.yellow('Building tensorlib with %d filters:' % len(filters)))
         puts(colored.cyan(pformat(sorted(filters.keys()), indent=4)))
 
-setup(name="tensorlib",
+setup(name="plotdevice-tensorlib",
     version="0.1.0",
     author="Alexander Bohn",
+    author_email="fish2000@gmail.com",
+    url="http://github.com/fish2000/plotdevice-tensorlib",
     description="GPU-based image processing",
     setup_requires=['clint'],
     cmdclass=dict(
         clean=CleanCommand),
     ext_modules=[tensorlib],
-    include_dirs=[gpuimage_headers])
+    include_dirs=[gpuimage_headers],
+    classifiers=CLASSIFIERS)
