@@ -51,7 +51,7 @@ def write_filter_header(filter_dict):
 class CleanCommand(Command):
     description = "wipe out ./build and ./dist dirs"
     user_options = []
-    trees = ('./build', './dist', './tensorlib/build', './plotdevice_tensor.egg-info')
+    trees = ('./build', './dist', './tensorlib/build', './plotdevice_tensorlib.egg-info')
     def initialize_options(self): pass
     def finalize_options(self): pass
     def run(self):
