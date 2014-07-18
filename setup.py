@@ -1,8 +1,10 @@
 from __future__ import print_function
 
 from pprint import pprint
-from os import getcwd, walk
-from os.path import splitext, join, relpath
+from os import getcwd, walk, system
+from os.path import splitext, join, relpath, isdir
+from distutils.core import Command
+from distutils.dir_util import remove_tree
 from setuptools import setup
 from setuptools.extension import Extension
 
@@ -28,6 +30,20 @@ def write_filter_header(filter_dict):
         header_fh.write('''#import "filters/FilterBase.h"\n\n''')
         header_fh.writelines(
             ['''#import "%s"\n''' % relpath(header, start='tensorlib') for header in headers])
+
+class CleanCommand(Command):
+    description = "wipe out ./build and ./dist dirs"
+    user_options = []
+    trees = ('./build', './dist', './tensorlib/build', './plotdevice_tensor.egg-info')
+    def initialize_options(self): pass
+    def finalize_options(self): pass
+    def run(self):
+        system('find . -iname .ds_store -print -delete')
+        system('find . -name \*.pyc -print -delete')
+        for tree in self.trees:
+            if isdir(tree):
+                remove_tree(tree)
+        system('rm -rf MANIFEST.in PKG')
 
 filters = find_filters()
 source_files = ['module.m', 'filters/FilterBase.m']
@@ -62,8 +78,10 @@ if __name__ == '__main__':
         pprint(sorted(filters.keys()))
 
 setup(name="tensorlib",
-       version="1.0",
-       author="fish2k",
-       description="GPU-based image processing",
-       ext_modules=[tensorlib],
-       include_dirs=[gpuimage_headers])
+    version="0.1.0",
+    author="Alexander Bohn",
+    description="GPU-based image processing",
+    cmdclass=dict(
+        clean=CleanCommand),
+    ext_modules=[tensorlib],
+    include_dirs=[gpuimage_headers])
