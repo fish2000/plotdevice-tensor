@@ -1,6 +1,6 @@
 from __future__ import print_function
 
-from pprint import pprint
+from pprint import pformat
 from os import getcwd, walk, system
 from os.path import splitext, join, relpath, isdir
 from distutils.core import Command
@@ -70,17 +70,19 @@ tensorlib = Extension('tensorlib',
 
 if __name__ == '__main__':
     import sys
+    from clint.textui import puts, colored
     build_commands = [
         'build', 'build_ext', 'build_clib',
         'install', 'install_lib']
     if set(sys.argv).intersection(set(build_commands)):
-        print('Building tensorlib with %d filters:' % len(filters))
-        pprint(sorted(filters.keys()))
+        puts(colored.yellow('Building tensorlib with %d filters:' % len(filters)))
+        puts(colored.cyan(pformat(sorted(filters.keys()), indent=4)))
 
 setup(name="tensorlib",
     version="0.1.0",
     author="Alexander Bohn",
     description="GPU-based image processing",
+    setup_requires=['clint'],
     cmdclass=dict(
         clean=CleanCommand),
     ext_modules=[tensorlib],
