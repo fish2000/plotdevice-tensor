@@ -8,7 +8,14 @@ from distutils.dir_util import remove_tree
 from setuptools import setup
 from setuptools.extension import Extension
 
+NAME = "plotdevice-tensorlib"
 VERSION = "0.1.1"
+AUTHOR = "Alexander Bohn"
+AUTHOR_EMAIL = "fish2000@gmail.com"
+URL = "http://github.com/fish2000/%s" % NAME
+DESCRIPTION = "GPU-based image processing for PlotDevice"
+
+LONG_DESCRIPTION = DESCRIPTION
 
 CLASSIFIERS = (
     "Development Status :: 3 - Alpha",
@@ -90,19 +97,20 @@ tensorlib = Extension('tensorlib',
 if __name__ == '__main__':
     import sys
     from clint.textui import puts, colored
-    build_commands = [
+    build_commands = (
         'build', 'build_ext', 'build_clib',
-        'install', 'install_lib']
+        'install', 'install_lib', 'sdist')
     if set(sys.argv).intersection(set(build_commands)):
         puts(colored.yellow('Building tensorlib with %d filters:' % len(filters)))
         puts(colored.cyan(pformat(sorted(filters.keys()), indent=4)))
 
-setup(name="plotdevice-tensorlib",
+setup(name=NAME,
     version=VERSION,
-    author="Alexander Bohn",
-    author_email="fish2000@gmail.com",
-    url="http://github.com/fish2000/plotdevice-tensorlib",
-    description="GPU-based image processing",
+    author=AUTHOR,
+    author_email=AUTHOR_EMAIL,
+    url=URL,
+    description=DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
     setup_requires=['clint'],
     cmdclass=dict(
         clean=CleanCommand),
